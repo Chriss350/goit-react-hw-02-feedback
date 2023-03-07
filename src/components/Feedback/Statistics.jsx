@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import css from './/style.module.css';
 
 export const Statistic = ({ good, neutral, bad, total, positiveFeedback }) => {
   return (
     <>
-      <ul>
+      <ul className={css.list}>
         <li>Good: {good}</li>
         <li>Neutral: {neutral}</li>
         <li>Bad: {bad}</li>
